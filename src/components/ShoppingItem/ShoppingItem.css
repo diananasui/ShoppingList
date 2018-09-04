@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:700");
+
+
+.box {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: transform .2s;
+  }
+  
+  .box:hover{
+   transform: scale(1.5); 
+   cursor: pointer;
+  }

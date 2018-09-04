@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:700");
+
+.inputNameStyle{
+    font-family:'Rouge Script', cursive; 
+    line-height: 24px; 
+    border-radius: 10px; 
+    outline: none;
+  }
+
+.inputFileStyle{
+    outline: none;
+    background: whitesmoke;
+    cursor:pointer;
+}
+
+.buttonStyle{
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Rouge Script', cursive;
+  }
+  
+.buttonStyle:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

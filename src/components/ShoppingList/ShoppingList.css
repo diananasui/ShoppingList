@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:700");
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+.styleDropdown{
+    outline: none;
+    width: 100px;
+    height: 20px;
+    color: black;
+    border: 2.5px solid #ccc;
+    box-shadow: inset 1px 1px 2px #ddd8dc;
+    background-color: whitesmoke;
+    /*border: 0 !important;
+    -webkit-appearance: none;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/arrow_drop_down-256.png");
+    background-repeat: no-repeat;
+    background-position: 82px 7px;*/
+    cursor: pointer; 
+  }
+  
+.myOption{
+    /*text-align: center;
+    font-weight: bold;*/
+  
+    border-radius:15px;
+    background-color:red;
+    /* nu imi ia stilul */
+  } 
