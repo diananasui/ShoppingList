@@ -2,14 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:700");
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
     justify-content: center;
   }
 
-.styleDropdown{
+.select {
     outline: none;
     width: 100px;
     height: 20px;
@@ -25,7 +25,7 @@
     cursor: pointer; 
   }
   
-.myOption{
+.select-option {
     /*text-align: center;
     font-weight: bold;*/
   

@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-//import logo from './logo.svg';
 import './App.css';
 import ShoppingList from './components/ShoppingList/ShoppingList';
 import DeleteButton from './components/DeleteButton/DeleteButton';
 import Form from './components/Form/Form';
 import PopUp from './components/PopUp/PopUp';
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 class App extends Component {
   state = {
@@ -25,12 +20,10 @@ class App extends Component {
   }
 
   addNewItem = (itemInfo) => {
-    
-    this.setState(prevState => ({
-      items: prevState.items.concat(itemInfo)
-    }))
+    this.setState({
+      items: [...this.state.items, itemInfo]
+    });
     this.togglePopup();
-    //document.querySelector('.modal').classList.toggle('show-modal');
   };
 
   handleChangeItem = (event) => {
@@ -45,7 +38,7 @@ class App extends Component {
   }
 
   handleDeleteItem = (event) => {
-    const node = this.state.myAudio.current; //the <audio> tag is returned
+    const node = this.state.myAudio.current;
     node.play();
     if(this.state.items.length===1)
       {this.state.items.pop();}
@@ -53,23 +46,20 @@ class App extends Component {
       this.deleteItem(this.state.selectedItem);
     }
   }
-
-  closeModal = () => {
-    this.togglePopup();
-  }
-
+  
   render() {
     return (
-      <div className="bg">
-        <div className="myForm" >
-          <h2 className = "title"> Shopping List </h2>
-          <Form onSubmit = {this.addNewItem} />
-          <ShoppingList  items = {this.state.items}
-                         handleChangeItem = {this.handleChangeItem}
-                         selectedItem = {this.state.selectedItem} />
-          <DeleteButton handleDeleteItem = {this.handleDeleteItem}
-                        myAudio = {this.state.myAudio} />
-          <PopUp show = {this.state.showPopup} onClose={this.closeModal} />
+      <div className="page">
+        <div className="page_form" >
+          <h2 className="page_form_title"> Shopping List </h2>
+          <Form onSubmit={this.addNewItem} />
+          <ShoppingList  items={this.state.items}
+                         handleChangeItem={this.handleChangeItem}
+                         selectedItem={this.state.selectedItem} />
+          <DeleteButton handleDeleteItem={this.handleDeleteItem}
+                        myAudio={this.state.myAudio} />
+          <PopUp show={this.state.showPopup}
+                 onClose={this.togglePopup} />
         </div>
       </div>
     );
