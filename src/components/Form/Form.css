@@ -2,20 +2,20 @@
 
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:700");
 
-.inputNameStyle{
+.input_name{
     font-family:'Rouge Script', cursive; 
     line-height: 24px; 
     border-radius: 10px; 
     outline: none;
   }
 
-.inputFileStyle{
+.input_file{
     outline: none;
     background: whitesmoke;
     cursor:pointer;
 }
 
-.buttonStyle{
+.button{
     font-size: 1em;
     background-color: black;
     color: white;
@@ -24,6 +24,6 @@
     font-family: 'Rouge Script', cursive;
   }
   
-.buttonStyle:hover{
+.button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

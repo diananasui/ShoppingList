@@ -1,15 +1,4 @@
 
-
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 .modal {
         position: fixed;
         left: 0;
@@ -48,7 +37,7 @@
         background-color: darkgray;
 }
 
-.show-modal {
+.modal_show {
         opacity: 1;
         visibility: visible;
         transform: scale(1.0);

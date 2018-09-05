@@ -1,23 +1,17 @@
 
 import './PopUp.css';
-import React, { Component } from 'react';
+import React from 'react';
 
-class PopUp extends React.Component {
+const PopUp = (props) => {
 
-    closePopup = (event) => {
-        this.props.onClose();
-    }
-
-    render(){
-        return(
-            <div className={this.props.show ? 'modal show-modal' : 'modal' } id="modalId">
-                <div className="modal-content">
-                    <span onClick={this.closePopup} className="close-button" id="closeButton">&times;</span>
-                    <h3>Item added successfuly!</h3>
-                </div>
+    return(
+        <div className={props.show ? 'modal modal_show' : 'modal'} >
+            <div className="modal-content">
+                <button onClick={props.onClose} className="close-button" > &times; </button>
+                <h3> Item added successfuly! </h3>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default PopUp;
